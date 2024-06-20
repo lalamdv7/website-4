@@ -1,0 +1,86 @@
+@import "style.scss";
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@font-face {
+    font-family: tt;
+    src: url(./assets/fonts/TitilliumWeb-Regular.ttf);
+}
+
+.col-1 {
+    width: calc(((100%/12)*1) - 0.666%);
+}
+
+.col-2 {
+    width: calc(((100%/12)*2) - 0.666%);
+}
+
+.col-3 {
+    width: calc(((100%/12)*3) - 0.666%);
+}
+
+.col-4 {
+    width: calc(((100%/12)*4) - 0.666%);
+}
+
+.col-5 {
+    width: calc(((100%/12)*5) - 0.666%);
+}
+
+.col-6 {
+    width: calc(((100%/12)*6) - 0.666%);
+}
+
+.col-7 {
+    width: calc(((100%/12)*7) - 0.666%);
+}
+
+.col-8 {
+    width: calc(((100%/12)*8) - 0.666%);
+}
+
+.col-9 {
+    width: calc(((100%/12)*9) - 0.666%);
+}
+
+.col-10 {
+    width: calc(((100%/12)*10) - 0.666%);
+}
+
+.col-11 {
+    width: calc(((100%/12)*11) - 0.666%);
+}
+
+.col-12 {
+    width: 100%;
+}
+
+@media only screen and (max-width:1000px) {
+    .col-4 {
+        width: calc(((100%/12)*6) - 0.666%);
+    }
+    .col-6 {
+        width: 100%;
+    }
+    .container-1 {
+        padding: 80px 18%;
+        h2 {
+            font-size: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width:540px) {
+    .col-4,
+    .col-6 {
+        width: 100%;
+    }
+}
